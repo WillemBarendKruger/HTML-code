@@ -3,63 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Willem Kruger - Website</title>
+
 </head>
 <body>
-    <title>Willem Kruger</title>
-    <h1>Willem Kruger</h1>
-    <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./index.html">About</a></li>
-        <li><a href="./index.html">Skills</a></li>
-        <li><a href="./index.html">Projects</a></li>
-        <li><a href="./index.html">Contact</a></li>
-        <br>
-        
-    <img src="https://kronosexperience.com/wp-content/uploads/2021/12/Team-building-promotes-teamwork-which-fosters-success-in-a-business.-Here-is-how-and-why-you-should-be-implementing-team-building..jpeg" alt="picture of a team working together" width="300" height="200">
-        
-    </ul>
-    <h2>About Me</h2>
-        <p>Software engineer with expertise in HTML, CSS, and JavaScript. Passionate about creating responsive and user-friendly websites.</p>
-    
-        <h2>Skilis</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-        </ul>
+    <header>
+        <div class="nav">
+            <h1>Willem Kruger</h1>
+            <section>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </section>
+        </div>
+    </header>
 
-        <h2>Projects</h2>
-        <h3>Personal Blog</h3>
-        <p>A responsive blog built with HTML and deployed on GitHub Pages.</p>
-        <a href="./index.html">View Project</a>
+    <main>
+        <section id="about-me">
+            <div>
+                <img src="https://www.google.com/imgres?q=team%20posing&imgurl=https%3A%2F%2Fi.pinimg.com%2F736x%2F4c%2F85%2F25%2F4c85253c0659a673ef230425619cd0ce.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F196047390006272422%2F&docid=iBev2C8ae7VyYM&tbnid=pI3SK4e7uxVLCM&vet=12ahUKEwjn9K7wrKKNAxXDVEEAHZPLB7kQM3oECHsQAA..i&w=717&h=562&hcb=2&ved=2ahUKEwjn9K7wrKKNAxXDVEEAHZPLB7kQM3oECHsQAA" alt="Software engineer team possing">
+            </div>
+            <article>
+                <h2>About Me</h2>
+                <p>Software engineer with expertise in HTML, CSS, and JavaScript. Passionate about creating responsive and user-friendly websites.</p>
+                <p>I have a background in computer science and have been working in web development for over 3 years. My focus is on creating clean, efficient, and accessible websites that provide exceptional user experiences.</p>
+            </article>
+        </section>
 
-        <h3>Portfolio Site
-            
-        </h3>
-        <p>A personal portfolio showcasing my web development projects.</p>
-        <a href="./index.html">View Project</a>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Responsive Design</li>
+                <li>UI/UX Design</li>
+                <li>Git</li>
+            </ul>
+        </section>
 
-        <h1>Contact Me</h1>
-        <label for="name">Name:</label>
-        <input type="text" id="name" value="Your name">
-        <br>
-        <label for="email">Email:</label>
-        <input type="text" id="email" value="your email@example.com">
-        <br>
-        <label for="message">MEssage</label>
-        <textarea name="message" id="message">Your message</textarea>
-        <br>
-        <input type="submit" value="submit">
-        <br>
-        <a href="./index.html">Github</a>
-        <a href="./index.html">Linkedin</a>
-        <a href="./index.html">Twitter</a>
+        <section id="my-projects">
+            <h2>Projects</h2>
+            <div>
+                <article>
+                    <h3>Personal Blog</h3>
+                    <p>A responsive blog built with HTML and deployed on GitHub Pages. Features include categories, tags, and a contact form.</p>
+                    <a href="#">View Project</a>
+                </article>
 
-        <footer>
-            <p>
-                2024 Willem Kruger All rights reserved.
-            </p>
-        </footer>
+                <article>
+                    <h3>Portfolio Site</h3>
+                    <p>A personal portfolio showcasing my web development projects. Built with HTML, CSS, and a touch of JavaScript for interactivity.</p>
+                    <a href="#">View Project</a>
+                </article>
+                
+                <article>
+                    <h3>Weather App</h3>
+                    <p>A weather application that fetches real-time weather data from an API and presents it in a clean, easy-to-read format.</p>
+                    <a href="#">View Project</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="/submit-form" method="POST">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+                
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a href="https://github.com/johndoe">GitHub</a>
+            <a href="https://linkedin.com/in/johndoe">LinkedIn</a>
+            <a href="https://twitter.com/johndoe">Twitter</a>
+        </div>
+        <p>&copy; 2024 Willem Kruger. All rights reserved.</p>
+    </footer>
 </body>
 </html>
