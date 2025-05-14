@@ -23,15 +23,6 @@ header{
     z-index: 1000;
 }
 
-/* header .navbar{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
-
 .navbar, li, a{
     text-align: center;
     padding: 10px 20px;
@@ -215,6 +206,15 @@ h2{
     border-bottom: 2px solid rgba(137, 191, 0, 0.95);
     display: inline-block;
     padding-bottom: 5px;
+}
+
+section{
+    padding: 40px 0;
+}
+
+p{
+    display: block;
+    margin: 0 0 20px 0;
 }
 
 /* mobile confihurations */
